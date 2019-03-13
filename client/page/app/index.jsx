@@ -32,27 +32,29 @@ class App extends React.Component {
            <SideBar/>
             <div className="main-content">
                 <Nav/>
-                <div className="post-content">
-                    {
-                        articals.map((data, key) => (
-                           
-                                <div 
-                                    key
-                                    className="post" 
-                                    
-                                >
-                                     <Link to={`/content/${data.path}`}>
-                                    <h3 className="post-title ">{data.title}</h3>
-                                    <div className="post-sumary">{data.summary}</div>
-                                    <div className="post-footer">
-                                        <p>{data.date}</p>
+                <div style={{overflowY: 'scroll', height: '100%'}}>
+                    <div className="post-content">
+                        {
+                            articals.map((data, key) => (
+                            
+                                    <div 
+                                        key
+                                        className="post" 
+                                        
+                                    >
+                                        <Link to={`/content/${data.path}`}>
+                                        <h3 className="post-title ">{data.title}</h3>
+                                        <div className="post-sumary">{data.summary}</div>
+                                        <div className="post-footer">
+                                            <p>{data.date}</p>
+                                        </div>
+                                        </Link>
                                     </div>
-                                    </Link>
-                                </div>
-                           
-                        ))
-                    }
-                    
+                            
+                            ))
+                        }
+                        
+                    </div>
                 </div>
             </div>
         </div>

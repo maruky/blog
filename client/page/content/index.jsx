@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../App/nav.jsx";
-import SideBar from "../App/side-bar.jsx";
+import Nav from "../app/nav.jsx";
+import SideBar from "../app/side-bar.jsx";
 
 const request = require('superagent');
 
