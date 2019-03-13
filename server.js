@@ -14,6 +14,9 @@ const webpackHotMiddleware = require('koa-webpack-hot-middleware');
 
 const compiler = webpack(config);
 
+const historyFallback = require('koa2-history-api-fallback')
+
+app.use(historyFallback({ whiteList: ['/api'] }));
 
 app.use(webpackDevMiddleware(compiler, {
     noInfo: true,

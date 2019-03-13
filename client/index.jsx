@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App/index.jsx';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Home from './home/index.jsx';
+import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
+import About from './about/index.jsx';
+import '../styles/common.css';
 
 class Index extends React.Component {
     render() {
         return (
             <Router>
-                <div>
-                    <App/>
+                <Switch>
                     <Route path="/" exact component={App} />
-                    <Route path="/home/" component={Home} />
-                </div>
+                    <Route path="/about/" component={About} />
+                </Switch>
             </Router>
         )
     }
