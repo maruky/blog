@@ -15,6 +15,9 @@ const webpackHotMiddleware = require('koa-webpack-hot-middleware');
 const compiler = webpack(config);
 
 const historyFallback = require('koa2-history-api-fallback')
+const router = require('./server/controller/api.js');
+
+app.use(router.routes());
 
 app.use(historyFallback({ whiteList: ['/api'] }));
 
