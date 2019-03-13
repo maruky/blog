@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
+import Nav from './nav.jsx';
 
 class App extends React.Component {
     render() {
@@ -19,7 +20,7 @@ class App extends React.Component {
                 </div>
             </div>
             <div className="main-content">
-            
+                <Nav/>
             </div>
         </div>
          

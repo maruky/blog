@@ -1,11 +1,18 @@
-
+html {
+    -webkit-font-smoothing: antialiased;
+}
 body {
+    color: rgba(0, 0, 0, 0.5);
     font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif
 }
 a {
     color: #424242;
+    cursor: pointer;
 }
 h3.title {
     font-size: 40px;
     font-weight: bold;
+}
+.fix {
+    position: fixed;
 }

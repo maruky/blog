@@ -1,4 +1,5 @@
 @import '../../styles/reset.css';
+@import './nav.scss';
 
 .main {
     position: absolute;
@@ -8,7 +9,6 @@
     bottom: 0;
     display: -ms-flex;
     display: -webkit-flex;
-    color: #424242;
     background-color: #fff;
     flex-flow:row;/*伸缩项目单行排列*/  
     line-height: 1.8em;
@@ -19,7 +19,7 @@
     border-right: 1px solid #f2f2f2;
 }
 .main-content {
-    flex:4;
+    flex: 6;
     width: 50%;
 }
 .long-title {
