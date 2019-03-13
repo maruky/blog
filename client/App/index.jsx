@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './index.scss';
 import Nav from './nav.jsx';
+const request = require('superagent');
 
 class App extends React.Component {
     constructor() {
@@ -10,7 +11,17 @@ class App extends React.Component {
             articals: [{}]
         }
     }
+    componentDidMount() {
+        request
+            .get('/api/articals')
+            .end((err, res) => {
+                this.setState({
+                    articals: res.body.data
+                })
+            })
+    }
     render() {
+        const {articals} = this.state;
         return (
         <div className="main">
             <div className="side-bar">
@@ -28,13 +39,18 @@ class App extends React.Component {
             <div className="main-content">
                 <Nav/>
                 <div className="post-content">
-                    <div className="post">
-                        <h3 className="post-title ">hello world</h3>
-                        <div className="post-sumary">this is maruky's blog</div>
-                        <div className="post-footer">
-                            <p>2019-03-13</p>
-                        </div>
-                    </div>
+                    {
+                        articals.map((data, key) => (
+                            <div className="post" key>
+                                <h3 className="post-title ">{data.title}</h3>
+                                <div className="post-sumary">{data.summary}</div>
+                                <div className="post-footer">
+                                    <p>{data.date}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
+                    
                 </div>
             </div>
         </div>

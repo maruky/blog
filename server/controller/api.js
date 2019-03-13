@@ -12,10 +12,11 @@ router.get('/api/articals', async(ctx, next) => {
     ctx.body = {
         code: 200,
         data: [{
+            id: 1,
             title:'hello world',
             date: '2019-03-13',
             tag: '随笔',
-            summary: 'hello world'
+            summary: 'hello world!'
         }]
     }
 })
