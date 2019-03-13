@@ -2,6 +2,7 @@
     width: 100%;
     color: #5A5A5A;
     height: 60px;
+    background-color: #fff;
     border-bottom: 1px solid #f2f2f2;
 
     >ul {
@@ -10,7 +11,7 @@
         li {
             margin: 0 20px;
             font-size: 12px;
-            padding-bottom: 20px;
+            padding-bottom: 13px;
             &.active {
                 border-bottom: 1px solid #5A5A5A;
             }

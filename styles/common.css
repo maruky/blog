@@ -3,6 +3,8 @@ html {
 }
 body {
     color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    line-height: 1.6em;
     font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif
 }
 a {

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 export default  class Nav extends React.Component {
     constructor() {
@@ -7,6 +9,7 @@ export default  class Nav extends React.Component {
             navData: [{
                 id: 1,
                 value: '主页',
+                link: '/'
             },{
                 id: 2,
                 value: '归档',
@@ -37,7 +40,8 @@ export default  class Nav extends React.Component {
                                 className={(nav.id === activeId) ? 'active' : ''}
                                 key={nav.id}
                                 onClick={() => {this.handleChangeNav(nav)}}>
-                                {nav.value}
+                                
+                                {nav.link ? <Link to={nav.link}>{nav.value}</Link> : nav.value}
                             </li>
                         )
                     }

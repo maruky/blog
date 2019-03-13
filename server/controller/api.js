@@ -14,6 +14,7 @@ router.get('/api/articals', async(ctx, next) => {
         data: [{
             id: 1,
             title:'hello world',
+            path: 'hello-world',
             date: '2019-03-13',
             tag: '随笔',
             summary: 'hello world!'
@@ -21,13 +22,13 @@ router.get('/api/articals', async(ctx, next) => {
     }
 })
 
-router.get('/api/:date.:title', async(ctx, next) => {
+router.get('/api/:path', async(ctx, next) => {
     let res = {}
-    let {date, title} = ctx.params;
+    let {path} = ctx.params;
 
     try {
         res = await new Promise((resolve, reject) => {
-            glob(`./articals/**/${date}.${title}.md`, {}, function (err, files) {
+            glob(`./articals/**/${path}.md`, {}, function (err, files) {
                 if(err) {
                     reject();
                 }else{
@@ -36,9 +37,11 @@ router.get('/api/:date.:title', async(ctx, next) => {
             })
         }).then((file) => {
             return fs.readFileSync(file, 'utf-8');
+        }).catch( e => {
+            throw new Error(e);
         })
     } catch (error) {
-        console.err('err');
+        console.error('err');
         ctx.body = {
             code: 500,
             error: {
