@@ -14,4 +14,4 @@ const devMiddleware = (compiler, opts) => {
   };
 };
 
-exportsmodule.=devMiddleware;
+module.exports = devMiddleware;

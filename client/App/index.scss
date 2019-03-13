@@ -38,3 +38,23 @@ h3.title {
     margin: 10px 0;
     color: #aaa;
 }
+.post-content {
+    margin-top: 70px;
+    .post {
+        padding: 20px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .post-title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-weight: 600;
+        color: #464646;
+        font-size: 22px;
+        margin: 0;
+    }
+    .post-sumary {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+}
