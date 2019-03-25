@@ -1,7 +1,7 @@
 import React from "react";
 import './index.scss';
-import Nav from './nav.jsx';
-import SideBar from "./side-bar.jsx";
+import Nav from "../../componts/Nav/index.jsx";
+import SideBar from "../../componts/SideBar/index.jsx";
 
 import { Link } from "react-router-dom";
 

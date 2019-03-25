@@ -1,0 +1,22 @@
+.side-bar {
+    flex: 3;
+    width: 50%;
+    border-right: 1px solid #f2f2f2;
+}
+.main-content {
+    flex: 6;
+    width: 50%;
+    overflow: hidden;
+}
+.long-title {
+    display: flex;
+    height: 100%;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    text-align: center;
+}
+h3.title {
+    letter-spacing: 2px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
