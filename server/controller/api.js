@@ -5,19 +5,19 @@ const fs = require("fs")
 
 const router = new Router();
 
-const showdown  = require('showdown');
-const converter = new showdown.Converter();
+// const showdown  = require('showdown');
+// const converter = new showdown.Converter();
 
 router.get('/api/articals', async(ctx, next) => {
     ctx.body = {
         code: 200,
         data: [{
             id: 1,
-            title:'hello world',
-            path: 'hello-world',
+            title:'LeetCode-最长回文子串',
+            path: 'Leetcode-最长回文子串',
             date: '2019-03-13',
-            tag: '随笔',
-            summary: 'hello world!'
+            tag: 'leetCode',
+            summary: '最长回文子串'
         }]
     }
 })
@@ -53,7 +53,7 @@ router.get('/api/:path', async(ctx, next) => {
     ctx.body = {
         code: 200,
         data: {
-            text: converter.makeHtml(res)
+            text: res
         }
     }
 })

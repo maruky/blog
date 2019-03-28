@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --harmony server.js",
-    "pm2": "pm2 start pm2.json" 
+    "release": "NODE_ENV=production node --harmony server.js"
   },
   "author": "maruky",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "koa2-history-api-fallback": "0.0.5",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-markdown": "^4.0.6",
     "react-router-dom": "^4.3.1",
     "request": "^2.79.0",
     "showdown": "^1.9.0",

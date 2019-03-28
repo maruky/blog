@@ -3,8 +3,9 @@ const webpack = require('webpack');
 //加载自动化HTML自动化编译插件
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 module.exports = {
-    mode: "development",
+    mode,
     entry: {
         index: ['webpack-hot-middleware/client', path.resolve(__dirname, './client/index.jsx')],
     },

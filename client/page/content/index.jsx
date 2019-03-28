@@ -1,8 +1,10 @@
 import React from "react";
 import Nav from "../../componts/Nav/index.jsx";
 import SideBar from "../../componts/SideBar/index.jsx";
+import CodeBlock from './code-block.jsx';
+import request from 'superagent';
 
-const request = require('superagent');
+import ReactMarkdown from 'react-markdown/with-html.js';
 
 
 export default class Content extends React.Component {
@@ -14,11 +16,15 @@ export default class Content extends React.Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0);
+        // document.querySelectorAll('pre code').forEach((block) => {
+        //     hljs.highlightBlock(block);
+        // });
         request.get('/api/'+ this.props.match.params.title).end((err, res) => {
             this.setState({
                 content: res.body.data.text
             })
         })
+
     }
     render() {
         return (
@@ -26,7 +32,11 @@ export default class Content extends React.Component {
                 <SideBar />
                 <div className="main-content">
                     <Nav/>
-                    <div className="content" dangerouslySetInnerHTML={{ __html: this.state.content }}>
+                    <div className="content markdown-body" >
+                        <ReactMarkdown
+                            source={ this.state.content}
+                            renderers={{code: CodeBlock}}
+                        />
                     </div>
                 </div>
             </div>
