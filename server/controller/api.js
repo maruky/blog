@@ -13,7 +13,7 @@ router.get('/api/articals', async(ctx, next) => {
         code: 200,
         data: [{
             id: 1,
-            title:'LeetCode-最长回文子串',
+            title:'【LeetCode】最长回文子串',
             path: 'Leetcode-最长回文子串',
             date: '2019-03-13',
             tag: 'leetCode',
