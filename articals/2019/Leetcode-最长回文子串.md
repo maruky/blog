@@ -39,7 +39,7 @@
             }
         }
 
-        var getChildString = function(s, left, right) {
+        function getChildString(s, left, right) {
             var str = left + 1 === right ? s[left] + s[right] :  s[left] + s[left + 1] + s[right];
     
             while(--left >= 0 && ++right < s.length) {

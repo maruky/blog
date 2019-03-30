@@ -30,7 +30,7 @@ class App extends React.Component {
         return (
         <div className="main">
            <SideBar/>
-            <div className="main-content">
+            <div className="main-content animated fadeInDown">
                 <Nav/>
                 <div style={{overflowY: 'scroll', height: '100%'}}>
                     <div className="post-content">

@@ -5,7 +5,7 @@ import './index.scss';
 export default class SideBar extends React.Component {
     render() {
         return (
-            <div className="side-bar">
+            <div className="side-bar animated fadeInDown">
                 <div className="long-title">
                     <div className="title">
                         <img src={require("../../../vendor/logo.png")} style={{width: 127}}/>
