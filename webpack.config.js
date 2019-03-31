@@ -48,6 +48,7 @@ module.exports = {
                 removeComments: true, //移除HTML中的注释
                 collapseWhitespace: false //删除空白符与换行符
             },
+            favicon: path.resolve(__dirname, './vendor/icon.png'),
             filename: 'index.html',
         })
     ]

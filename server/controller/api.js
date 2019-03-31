@@ -18,6 +18,13 @@ router.get('/api/articals', async(ctx, next) => {
             date: '2019-03-13',
             tag: 'leetCode',
             summary: '最长回文子串'
+        },{
+            id: 2,
+            title:'Promise | 控制并发',
+            path: 'promise | 并发',
+            date: '2019-04-01',
+            tag: 'promise',
+            summary: '用Promise限制并发数量'
         }]
     }
 })
