@@ -16,9 +16,7 @@ export default class Content extends React.Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0);
-        // document.querySelectorAll('pre code').forEach((block) => {
-        //     hljs.highlightBlock(block);
-        // });
+    
         request.get('/api/'+ this.props.match.params.title).end((err, res) => {
             this.setState({
                 content: res.body.data.text

@@ -16,14 +16,14 @@ router.get('/api/articals', async(ctx, next) => {
             title:'【LeetCode】最长回文子串',
             path: 'Leetcode-最长回文子串',
             date: '2019-03-13',
-            tag: 'leetCode',
+            tag: 'LeetCode',
             summary: '最长回文子串'
         },{
             id: 2,
             title:'Promise | 控制并发',
             path: 'promise | 并发',
             date: '2019-04-01',
-            tag: 'promise',
+            tag: 'Promise',
             summary: '用Promise控制并发数量'
         }]
     }

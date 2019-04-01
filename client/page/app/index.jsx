@@ -45,9 +45,10 @@ class App extends React.Component {
                                         <Link to={`/content/${data.path}`}>
                                         <h3 className="post-title ">{data.title}</h3>
                                         <div className="post-sumary">{data.summary}</div>
-                                        <div className="post-footer">
-                                            <p>{data.date}</p>
-                                        </div>
+                                        <ul className="post-footer">
+                                            <li><span class="iconfont icon-time"></span>{data.date}</li>
+                                            <li><span class="iconfont icon-tag"></span>{data.tag}</li>
+                                        </ul>
                                         </Link>
                                     </div>
                             
