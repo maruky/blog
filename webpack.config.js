@@ -35,7 +35,14 @@ module.exports = {
                     //[name].[ext]：设定图片按照本来的文件名和扩展名打包，不用进行额外编码
                     //[hash:8]：一个项目中如果两个文件夹中的图片重名，打包图片就会被覆盖，加上hash值的前八位作为图片名，可以避免重名。
                 }
-            }
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2|svg)$/,
+                loader: 'file-loader',
+                options: {
+                  name: 'iconfont/[name].[ext]',
+                },
+            },
         ]
     },
     plugins: [

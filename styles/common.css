@@ -1,4 +1,7 @@
 @import './markdown.scss';
+@import './iconfont/iconfont.css';
+
+
 html {
     -webkit-font-smoothing: antialiased;
 }
