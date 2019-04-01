@@ -31,7 +31,7 @@ function sendRequest(urls: string[], concurrency: number) {
 ```js
 
 /*
-**@param {number[]} urls
+**@param {string[]} urls
 **@param {number} concurrency
 */
 function sendRequest(urls, concurrency) {
@@ -118,7 +118,7 @@ function featchUrl (url) {
 }
 
 //测试
-var urls = [1,2,3,4];
+var urls = ['1', '2', '3', '4', '5'];
 sendRequest(urls, 2)
 ```
 
