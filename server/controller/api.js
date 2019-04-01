@@ -24,7 +24,7 @@ router.get('/api/articals', async(ctx, next) => {
             path: 'promise | 并发',
             date: '2019-04-01',
             tag: 'promise',
-            summary: '用Promise限制并发数量'
+            summary: '用Promise控制并发数量'
         }]
     }
 })

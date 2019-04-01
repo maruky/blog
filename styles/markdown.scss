@@ -1,5 +1,4 @@
 .markdown-body {
-  line-height: 1em;
   :root {
       --control-text-color: #777;
       --side-bar-bg-color: #f6f8fa;
@@ -258,7 +257,6 @@
       font-family: Consolas, "Liberation Mono", Courier, monospace;
       padding: 2px 4px 0px 4px;
       /*font-size: 0.9em;*/
-      font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace, "PingFang SC", "Microsoft YaHei", "微软雅黑";
   }
   code {
     background-color: #ffcbcb;
@@ -347,7 +345,6 @@
   .md-image>.md-meta {
       border: 1px solid #ddd;
       border-radius: 3px;
-      font-family: "SF Mono", Consolas, "PingFang SC", "Liberation Mono", Courier, monospace, "Microsoft YaHei", "微软雅黑";
       padding: 2px 4px 0px 4px;
       font-size: 0.9em;
       color: inherit;
@@ -400,7 +397,7 @@
   }
 
   header, .context-menu, .megamenu-content, footer{
-    font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+   // font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .file-node-content:hover .file-node-icon,
@@ -432,7 +429,7 @@
   }
 
   .file-list-item-summary {
-      font-family: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      //mily: "SF UI Text", "PingFang SC", -apple-system, -apple-system-body, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .file-list-item-file-name {
