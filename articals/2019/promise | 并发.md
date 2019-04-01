@@ -12,14 +12,15 @@
 所以，如何控制请求的并发数量呢？
 
 ### 题目 ###
-批量请求资源，通过参数concurrency控制请求的并发度。
+----------
+>批量请求资源，通过参数concurrency控制请求的并发度。
 
 ```js
 function sendRequest(urls: string[], concurrency: number) {
 
 }
 ```
-&nbsp;
+
 ### 实现 ###
 ----------
 
