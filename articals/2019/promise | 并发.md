@@ -3,7 +3,7 @@
 
 &nbsp;
 
-前段时间朋友（不是我！）出去面试，遇到一道有关Promise的编程题。
+前段时间朋友出去面试，遇到一道有关Promise的编程题。
 
 作为一名前端低级渣渣工程蛳，Promise这个单词对我来说简直是耳熟能详，但是灵活运用和掌握....emmmmmmm（跪）。
 
@@ -13,7 +13,7 @@
 
 ### 题目 ###
 ----------
->批量请求资源，通过参数concurrency控制请求的并发度。
+批量请求资源，通过参数concurrency控制请求的并发度。
 
 ```js
 function sendRequest(urls: string[], concurrency: number) {

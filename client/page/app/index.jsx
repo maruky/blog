@@ -46,8 +46,8 @@ class App extends React.Component {
                                         <h3 className="post-title ">{data.title}</h3>
                                         <div className="post-sumary">{data.summary}</div>
                                         <ul className="post-footer">
-                                            <li><span class="iconfont icon-time"></span>{data.date}</li>
-                                            <li><span class="iconfont icon-tag"></span>{data.tag}</li>
+                                            <li><span class="iconfont icon-time"></span><span>{data.date}</span></li>
+                                            <li><span class="iconfont icon-tagfill"></span><span>{data.tag}</span></li>
                                         </ul>
                                         </Link>
                                     </div>
