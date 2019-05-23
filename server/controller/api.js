@@ -27,8 +27,8 @@ router.get('/api/articals', async(ctx, next) => {
             summary: '用Promise控制并发数量'
         },{
             id: 3,
-            title:'Wepbpck热更新机制',
-            path: 'Wepbpck热更新机制',
+            title:'Webpack热更新机制',
+            path: 'Webpack热更新机制',
             date: '2019-05-24',
             tag: 'webpack',
             summary: 'webpack HMR'
