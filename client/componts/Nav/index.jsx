@@ -36,12 +36,11 @@ export default  class Nav extends React.Component {
             <div className="nav fix top">
                 <ul>
                     {
-                        navData.map(nav => 
+                        navData.map((nav, key) => 
                             <li 
                                 className={(nav.id === activeId) ? 'active' : ''}
                                 key={nav.id}
                                 onClick={() => {this.handleChangeNav(nav)}}>
-                                
                                 {nav.link ? <Link to={nav.link}>{nav.value}</Link> : nav.value}
                             </li>
                         )

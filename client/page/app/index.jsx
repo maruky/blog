@@ -37,17 +37,13 @@ class App extends React.Component {
                         {
                             articals.map((data, key) => (
                             
-                                    <div 
-                                        key
-                                        className="post" 
-                                        
-                                    >
+                                    <div key={key} className="post">
                                         <Link to={`/content/${data.path}`}>
                                         <h3 className="post-title ">{data.title}</h3>
                                         <div className="post-sumary">{data.summary}</div>
                                         <ul className="post-footer">
-                                            <li><span class="iconfont icon-time"></span><span>{data.date}</span></li>
-                                            <li><span class="iconfont icon-tagfill"></span><span>{data.tag}</span></li>
+                                            <li><span className="iconfont icon-time"></span><span>{data.date}</span></li>
+                                            <li><span className="iconfont icon-tagfill"></span><span>{data.tag}</span></li>
                                         </ul>
                                         </Link>
                                     </div>

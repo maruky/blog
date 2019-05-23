@@ -13,7 +13,7 @@ export default class SideBar extends React.Component {
                         <div className="description">
                             <p>浩瀚宇宙中 微渺的 像一只 蜉蝣.</p>
                             <ul className="links">
-                                <li><a href="https://github.com/maruky"><span class="iconfont icon-github-fill"></span></a></li>    
+                                <li><a href="https://github.com/maruky"><span className="iconfont icon-github-fill"></span></a></li>    
                             </ul>
                         </div>
                     </div>
